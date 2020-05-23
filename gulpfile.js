@@ -19,7 +19,7 @@ watch("./js/*.js").on('change', browserSync.reload);
 };
 
 function serveSass() {
-    return src("./sass/*.sass")
+    return src("./sass/**/*.sass")
         .pipe(sass())
         .pipe(autoprefixer({
             cascade: false
