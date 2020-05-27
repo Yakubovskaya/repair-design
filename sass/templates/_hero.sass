@@ -43,6 +43,9 @@
         text-transform: uppercase
         color: $light
         text-decoration: none
+        transition: color 0.3s
+        &:hover
+            color: $primary
         &::after
             content: ''
             background: url('../img/arrow-down.svg') no-repeat center
@@ -64,6 +67,9 @@
         color: $primary
         transform: rotate(90deg)
         line-height: 0.8
+        transition: color 0.3s
+        &:hover
+            color: $light
         &::after
             content: ''
             width: 51px
