@@ -350,6 +350,9 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+    .button--outline:hover {
+      color: #E3B873;
+      border-color: #E3B873; }
 
 .container {
   width: 85%;
@@ -384,13 +387,12 @@ header {
     color: #E3B873; }
 
 .phone {
-  color: #E3B873;
-  transition: color 0.3s; }
-  .phone:hover {
-    color: #fff; }
+  color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 45px;
+  transition: color 0.3s;
+  color: #fff; }
 
 .hero {
   position: relative;
