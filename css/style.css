@@ -548,7 +548,7 @@ img {
 @media screen and (max-width: 760px) {
   .row {
     flex-direction: column;
-    align-items: center; }
+    margin: auto; }
   .types__card {
     margin-bottom: 5rem; }
   .card__text {
