@@ -518,6 +518,7 @@ img {
     text-align: center; }
     .section-title__heading {
       font-family: 'Yeseva One', cursive;
+      font-weight: 400;
       font-size: 1.4rem;
       text-transform: uppercase; }
     .section-title__image {
@@ -530,54 +531,6 @@ img {
         height: 2px;
         background-color: #E3B873;
         margin: 0 10px; }
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 12px; }
-  .nav__item {
-    margin-right: 1rem; } }
-
-@media screen and (max-width: 992px) {
-  .nav {
-    display: none; }
-  .hero__instagram {
-    display: none; }
-  .hero__content {
-    margin-left: 0; } }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    margin: auto; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; } }
-
-@media screen and (max-width: 576px) {
-  .contacts__phone {
-    margin-right: 0;
-    color: #fff;
-    text-decoration: none; }
-  .contacts__button {
-    display: none; }
-  .title {
-    font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
-
-@media screen and (max-height: 520px) {
-  .hero__scroll-down {
-    display: none; } }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -601,6 +554,7 @@ img {
 
 .card__title {
   font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   font-size: 1.29rem;
   margin-top: 0;
   margin-bottom: 0.7rem; }
@@ -634,3 +588,51 @@ img {
 
 .card__pricetag--design {
   padding: 1.214rem 5.7rem 1.214rem 2.4rem; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
+
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 5rem; }
+  .card {
+    margin-left: 0; } }
+
+@media screen and (max-width: 576px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #fff;
+    text-decoration: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    max-width: 22.86rem; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; } }
+
+@media screen and (max-height: 520px) {
+  .hero__scroll-down {
+    display: none; } }
