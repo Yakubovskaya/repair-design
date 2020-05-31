@@ -447,6 +447,7 @@ header {
     min-width: 17.6rem;
     min-height: 6.92rem;
     font-family: 'Yeseva One';
+    font-weight: 400;
     font-size: 0.85rem;
     background-color: #131313;
     text-transform: uppercase;
@@ -491,6 +492,7 @@ header {
 .title {
   margin: 0;
   font-family: 'Yeseva One', cursive;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 2.857rem;
   font-weight: normal;
@@ -572,6 +574,7 @@ img {
   left: 0;
   bottom: -1.79rem;
   font-size: 1.29rem;
+  font-weight: 400;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   background-color: #E3B873;
