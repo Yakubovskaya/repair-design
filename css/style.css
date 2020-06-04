@@ -397,6 +397,14 @@ template {
     cursor: pointer;
     margin-right: 0.57rem; }
 
+.upbutton {
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999; }
+
 .container {
   width: 85%;
   max-width: 1256px;
