@@ -28,11 +28,11 @@ $(document).ready(function () {
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-        if ($('.upbutton').is(':hidden')) {
-            $('.upbutton').css({opacity : 1}).fadeIn('slow');
+        if ($('.up-button').is(':hidden')) {
+            $('.up-button').css({opacity : 1}).fadeIn('slow');
         }
-    } else { $('.upbutton').stop(true, false).fadeOut('fast'); }
+    } else { $('.up-button').stop(true, false).fadeOut('fast'); }
 });
-$('.upbutton').click(function() {
+$('.up-button').click(function() {
     $('html, body').stop().animate({scrollTop : 0}, 2000);
 });
