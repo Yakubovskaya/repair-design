@@ -1,11 +1,21 @@
-@media screen and ( max-width: 1240px )
+@media screen and ( max-width: 1270px )
     html
         font-size: 12px
     .nav
         &__item
             margin-right: 1rem
+    .card
+        &__text
+            margin: 0
+            margin-top: -9.3rem
 
-@media screen and ( max-width: 992px )
+@media screen and ( max-width: 1067px )
+    .card
+        &__title
+            font-size: 1.1rem
+     
+
+@media screen and ( max-width: 997px )
     .nav 
         display: none
     .hero
@@ -13,19 +23,37 @@
             display: none
         &__content
             margin-left: 0
+    .card
+        &__title
+            font-size: 1rem
+     
 
-@media screen and ( max-width: 760px )
+@media screen and ( max-width: 900px )
     .row
-        flex-direction: column
-        align-items: center
+        &__projects
+            align-items: center
+            flex-direction: row
+            justify-content: space-between
     .types
         &__card
             margin-bottom: 5rem
-    .card
-        &__text
-        margin-left: 0
-
+    .section-title
+        &__heading
+            &--primary
+                margin-top: 0
+        
 @media screen and ( max-width: 576px )
+    .container
+        &__projects
+            padding-top: 0
+            padding-bottom: 90px
+    .section-title
+        &__heading
+            &--primary
+                margin-top: 0
+        &__word
+            &::after
+                display: none
     .contacts
         &__phone
             margin-right: 0
@@ -47,10 +75,37 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-@media screen and ( max-height: 520px  )
+    .row
+        &__projects
+            flex-direction: column
+    .col
+        &-50
+            width: 100%
+    .swiper
+        &-container
+            margin-left: 0
+            width: 60%
+        &-slide
+            &__text
+                flex-basis: 50%
+
+@media screen and ( max-height: 520px )
     .hero
         &__scroll-down
             display: none
-    
+
+@media screen and ( max-width: 406px )
+    .swiper
+        &-slide
+            &__heading
+               font-size: 1rem
+
+@media screen and ( max-width: 320px )
+    .swiper
+        &-slide
+            &__heading
+               font-size: 0.7rem
+
 
     
+

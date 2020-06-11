@@ -410,6 +410,10 @@ template {
   width: 85%;
   max-width: 1256px;
   margin: auto; }
+  .container__projects {
+    max-width: 1229px;
+    padding-top: 128px;
+    padding-bottom: 90px; }
 
 .row {
   display: flex;
@@ -421,6 +425,68 @@ template {
 
 .col-50 {
   width: 50%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1rem; }
+
+img {
+  max-width: 100%; }
+
+.section--dark {
+  background-color: #131313;
+  color: #fff; }
+
+.section-title {
+  text-align: center; }
+  .section-title--left {
+    text-align: left; }
+  .section-title__heading {
+    line-height: 138.6%;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+    .section-title__heading--primary {
+      color: #E3B873;
+      font-size: 1.93rem;
+      letter-spacing: -0.14rem; }
+  .section-title__word {
+    display: flex;
+    align-items: center; }
+    .section-title__word::after {
+      content: '';
+      width: 91px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 2.5rem; }
+  .section-title__text--left {
+    font-size: 1.29rem;
+    line-height: 2.07rem;
+    max-width: 31.57rem; }
+  .section-title__text--center {
+    margin: 0 auto;
+    max-width: 53rem;
+    line-height: 1.9rem;
+    font-size: 1.43rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.8rem; }
+  .section-title__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .section-title__image::after, .section-title__image::before {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #E3B873;
+      margin: 0 10px; }
 
 header {
   position: fixed;
@@ -572,13 +638,14 @@ header {
   .title--primary {
     color: #E3B873; }
 
-.projects {
-  height: 702px; }
+.swiper-container {
+  max-width: 44.9rem; }
 
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start; }
+  align-items: flex-start;
+  padding-bottom: 3.6rem; }
   .swiper-slide__text {
     flex-basis: 34%;
     margin-top: 0.7rem;
@@ -597,7 +664,9 @@ header {
     margin-top: 2rem; }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 0.6rem;
+  height: 0.6rem; }
   .swiper-pagination-bullet-active {
     background-color: #fff; }
 
@@ -621,68 +690,8 @@ header {
   width: auto;
   bottom: -2px; }
 
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-html {
-  font-size: 14px; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 1rem; }
-
-img {
-  max-width: 100%; }
-
-.section {
-  padding: 60px; }
-  .section--dark {
-    background-color: #131313;
-    color: #fff; }
-  .section-title {
-    text-align: center; }
-    .section-title--left {
-      text-align: left; }
-    .section-title__heading {
-      line-height: 138.6%;
-      font-family: 'Yeseva One', cursive;
-      font-weight: 400;
-      font-size: 1.4rem;
-      text-transform: uppercase; }
-      .section-title__heading--primary {
-        color: #E3B873;
-        font-size: 1.93rem;
-        letter-spacing: -0.14rem; }
-    .section-title__word {
-      display: flex;
-      align-items: center; }
-      .section-title__word::after {
-        content: '';
-        width: 91px;
-        height: 1px;
-        background-color: #E3B873;
-        margin-left: 2.5rem; }
-    .section-title__text--left {
-      font-size: 1.29rem;
-      line-height: 2.07rem;
-      max-width: 31.57rem; }
-    .section-title__text--center {
-      margin: 0 auto;
-      max-width: 53rem;
-      line-height: 1.9rem;
-      font-size: 1.43rem;
-      margin-top: 1.5rem;
-      margin-bottom: 2.8rem; }
-    .section-title__image {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .section-title__image::after, .section-title__image::before {
-        content: '';
-        width: 32px;
-        height: 2px;
-        background-color: #E3B873;
-        margin: 0 10px; }
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -779,30 +788,47 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1270px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .card__text {
+    margin: 0;
+    margin-top: -9.3rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1067px) {
+  .card__title {
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 997px) {
   .nav {
     display: none; }
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .card__title {
+    font-size: 1rem; } }
 
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
+@media screen and (max-width: 900px) {
+  .row__projects {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; }
   .types__card {
     margin-bottom: 5rem; }
-  .card {
-    margin-left: 0; } }
+  .section-title__heading--primary {
+    margin-top: 0; } }
 
 @media screen and (max-width: 576px) {
+  .container__projects {
+    padding-top: 0;
+    padding-bottom: 90px; }
+  .section-title__heading--primary {
+    margin-top: 0; }
+  .section-title__word::after {
+    display: none; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -821,8 +847,25 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .row__projects {
+    flex-direction: column; }
+  .col-50 {
+    width: 100%; }
+  .swiper-container {
+    margin-left: 0;
+    width: 60%; }
+  .swiper-slide__text {
+    flex-basis: 50%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-width: 406px) {
+  .swiper-slide__heading {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 320px) {
+  .swiper-slide__heading {
+    font-size: 0.7rem; } }
