@@ -703,7 +703,8 @@ header {
   padding: 1.79rem 2.14rem;
   margin-top: -9.3rem;
   background-color: #fff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  margin-bottom: 90px; }
 
 .card__title {
   font-family: 'Yeseva One', cursive;
@@ -812,10 +813,13 @@ header {
     font-size: 1rem; } }
 
 @media screen and (max-width: 900px) {
-  .row__projects {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between; }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+    .row__projects {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between; }
   .types__card {
     margin-bottom: 5rem; }
   .section-title__heading--primary {

@@ -41,10 +41,17 @@ $(document).ready(function () {
     var prev = $('.swiper-button-prev');
     var bullets = $('.swiper-pagination');
 
-    next.css('left', prev.width() + 20 + bullets.width() + 20)
-    bullets.css('left', prev.width() + 20)
+    next.css('left', prev.width() + 20 + bullets.width() + 20);
+    bullets.css('left', prev.width() + 20);
 
+    var w = $(window).width();
+    if (w <= 480)
+    next.css('left', prev.width() + 1 + bullets.width() + 1);
+    bullets.css('left', prev.width() + 1);
 });
+
+
+
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
