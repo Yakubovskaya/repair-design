@@ -26,6 +26,10 @@
     .card
         &__title
             font-size: 1rem
+    .swiper
+        &-slide
+            &__heading
+                font-size: 1rem
      
 
 @media screen and ( max-width: 900px )
@@ -43,8 +47,12 @@
         &__heading
             &--primary
                 margin-top: 0
-        
-@media screen and ( max-width: 576px )
+    .swiper
+        &-slide
+            &__heading
+                font-size: 0.9rem
+
+@media screen and ( max-width: 664px )
     .container
         &__projects
             padding-top: 0
@@ -56,6 +64,24 @@
         &__word
             &::after
                 display: none
+    .row
+        &__projects
+            flex-direction: column
+    .col
+        &-50
+            width: 100%
+    .swiper
+        &-container
+            margin-left: 0
+        &-slide
+            &__text
+                flex-basis: 50%
+    .swiper
+        &-slide
+            &__heading
+                font-size: 1.285rem
+
+@media screen and ( max-width: 576px )
     .contacts
         &__phone
             margin-right: 0
@@ -77,19 +103,6 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-    .row
-        &__projects
-            flex-direction: column
-    .col
-        &-50
-            width: 100%
-    .swiper
-        &-container
-            margin-left: 0
-            width: 60%
-        &-slide
-            &__text
-                flex-basis: 50%
 
 @media screen and ( max-height: 520px )
     .hero
