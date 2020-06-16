@@ -129,6 +129,14 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
+    .types
+        padding-bottom: 30rem
+    .design-project
+        background-color: $dark
+        padding-top: 11rem
+        margin-top: -40rem
+        &__section-title
+            color: $light
     .projects
         padding-bottom: 76.4rem
     .control
@@ -150,10 +158,11 @@
             color: $light
             &::placeholder
                 color: $light
-            &--name
-                margin-bottom: 63px
-            &--tel
-                margin-bottom: 26.5px
+            &-group
+                &--name
+                    margin-bottom: 63px
+                &--tel
+                    margin-bottom: 26.5px
         &__policy
             align-self: flex-start
             margin-bottom: 62px
@@ -162,6 +171,32 @@
         &__button
             order: 1
             margin-bottom: 58px
+    .footer
+        padding-top: 0
+        margin-bottom: 0
+        background: none
+        background-color: $dark
+        &__wrap
+            background-color: $dark
+            margin-top: -27.3rem
+            margin-bottom: 0
+            padding-top: 9rem
+        &__form
+            display: flex
+            flex-direction: column
+        &__button
+            margin: 0
+        &__menu
+            display: none
+    .footer
+        &__wrap
+            padding-right: 0
+            padding-left: 0
+    .policy
+        &__label
+            &--center
+                justify-content: flex-start
+
 @media screen and ( max-width: 518px )
     .projects
         padding-bottom: 78.9rem
@@ -220,6 +255,7 @@
             max-width: 20rem
             min-height: 10.6rem
             background-size: contain
+        
         
     
     

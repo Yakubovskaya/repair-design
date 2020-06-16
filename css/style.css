@@ -403,7 +403,7 @@ template {
 .up-button {
   bottom: 30px;
   right: 30px;
-  padding: 10px 19px;
+  padding: 0.7rem 1.4rem;
   cursor: pointer;
   display: none;
   position: fixed;
@@ -416,7 +416,7 @@ input.invalid {
   border-bottom: 1px solid tomato; }
 
 .container {
-  width: 85%;
+  width: 84%;
   max-width: 1256px;
   margin: auto; }
   .container__projects {
@@ -824,6 +824,8 @@ header {
 .footer {
   padding-top: 90px;
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer__section--dark {
+    margin-bottom: 0; }
   .footer__wrap {
     max-width: 63.07rem;
     margin: auto;
@@ -1017,6 +1019,14 @@ header {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
+  .types {
+    padding-bottom: 30rem; }
+  .design-project {
+    background-color: #131313;
+    padding-top: 11rem;
+    margin-top: -40rem; }
+    .design-project__section-title {
+      color: #fff; }
   .projects {
     padding-bottom: 76.4rem; }
   .control__section-title {
@@ -1045,9 +1055,9 @@ header {
       color: #fff; }
     .control__input::placeholder {
       color: #fff; }
-    .control__input--name {
+    .control__input-group--name {
       margin-bottom: 63px; }
-    .control__input--tel {
+    .control__input-group--tel {
       margin-bottom: 26.5px; }
   .control__policy {
     align-self: flex-start;
@@ -1056,7 +1066,29 @@ header {
       color: #fff; }
   .control__button {
     order: 1;
-    margin-bottom: 58px; } }
+    margin-bottom: 58px; }
+  .footer {
+    padding-top: 0;
+    margin-bottom: 0;
+    background: none;
+    background-color: #131313; }
+    .footer__wrap {
+      background-color: #131313;
+      margin-top: -27.3rem;
+      margin-bottom: 0;
+      padding-top: 9rem; }
+    .footer__form {
+      display: flex;
+      flex-direction: column; }
+    .footer__button {
+      margin: 0; }
+    .footer__menu {
+      display: none; }
+  .footer__wrap {
+    padding-right: 0;
+    padding-left: 0; }
+  .policy__label--center {
+    justify-content: flex-start; } }
 
 @media screen and (max-width: 518px) {
   .projects {
