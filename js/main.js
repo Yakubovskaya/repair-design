@@ -17,16 +17,16 @@ $(document).ready(function () {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
         closeBtn = $('.modal__close');
-    
-    modalBtn.on('click', function() {
+
+    modalBtn.on('click', function () {
         modal.toggleClass('modal--visible')
     });
-    closeBtn.on('click', function() {
+    closeBtn.on('click', function () {
         modal.toggleClass('modal--visible')
     });
 
-    var mySwiper = new Swiper ('.swiper-container', {
-        loop: true, 
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -34,7 +34,7 @@ $(document).ready(function () {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-          },
+        },
     });
 
     var next = $('.swiper-button-next');
@@ -46,18 +46,102 @@ $(document).ready(function () {
 
     new WOW().init();
 
+    //Валидация формы
+    $('.modal__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // строчное правило
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            // правило-объект
+            userEmail: {
+                required: true,
+                email: true
+            }
+        }, //сообщения
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче 2 букв",
+                maxlength: "Имя не больше 15 букв"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+                required: "Обязательно укажите email",
+                email: "Введите в формате: name@domain.com"
+            }
+        }
+    });
+    
+    $('.control__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // строчное правило
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            // правило-объект
+        }, //сообщения
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче 2 букв",
+                maxlength: "Имя не больше 15 букв"
+            },
+            userPhone: "Телефон обязателен",
+        }
+    });
+
+    $('.footer__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // строчное правило
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            userQuestion: "required"
+            // правило-объект
+        }, //сообщения
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlength: "Имя не короче 2 букв",
+                maxlength: "Имя не больше 15 букв"
+            },
+            userPhone: "Телефон обязателен",
+            userQuestion: "Заполните поле"
+        }
+    });
+
+    //маска для номера телефона
+
+    $('[type=tel]').mask('+7(000)000-00-00', { placeholder: "+7(___)___-__-__" });
+
 });
 
 
 
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         if ($('.up-button').is(':hidden')) {
-            $('.up-button').css({opacity : 1}).fadeIn('slow');
+            $('.up-button').css({ opacity: 1 }).fadeIn('slow');
         }
     } else { $('.up-button').stop(true, false).fadeOut('fast'); }
 });
-$('.up-button').click(function() {
-    $('html, body').stop().animate({scrollTop : 0}, 2000);
+$('.up-button').click(function () {
+    $('html, body').stop().animate({ scrollTop: 0 }, 2000);
 });
