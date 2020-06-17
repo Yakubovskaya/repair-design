@@ -368,6 +368,8 @@ template {
   font-size: 1.29rem;
   color: #fff;
   padding: 0.5rem 0; }
+  .input-group {
+    position: relative; }
   .input--light::-webkit-input-placeholder {
     color: #fff; }
   .input--light::-moz-placeholder {
@@ -414,6 +416,10 @@ template {
 
 input.invalid {
   border-bottom: 1px solid tomato; }
+
+#user-name-error, #user-phone-error, #user-email-error, #user-question-error {
+  position: absolute;
+  bottom: -17px; }
 
 .container {
   width: 84%;
@@ -915,8 +921,6 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 3.43rem; }
-  .modal__input:last-of-type {
-    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {

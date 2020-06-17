@@ -32,6 +32,8 @@
     font-size: 1.29rem
     color: $light
     padding: 0.5rem 0
+    &-group
+        position: relative
     &--light
         &::placeholder
             color: $light
@@ -72,5 +74,9 @@
 input
     &.invalid
         border-bottom: 1px solid tomato
+#user-name-error, #user-phone-error, #user-email-error, #user-question-error
+    position: absolute
+    bottom: -17px
+
 
 
