@@ -419,7 +419,7 @@ input.invalid {
 
 #user-name-error, #user-phone-error, #user-email-error, #user-question-error {
   position: absolute;
-  bottom: -17px; }
+  bottom: -14px; }
 
 .container {
   width: 84%;
