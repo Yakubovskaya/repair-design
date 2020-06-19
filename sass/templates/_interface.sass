@@ -38,10 +38,11 @@
         &::placeholder
             color: $light
 .policy
+    position: relative
     &__checkbox
         opacity: 0
         visibility: hidden
-        &:checked +
+        &:checked ~
             .policy__label
                 &::before
                     background: $primary url(../img/check.svg) no-repeat center / 0.8rem
@@ -71,14 +72,26 @@
 
 .invalid
     color: tomato
-    // position: absolute
-    // bottom: -17px
 input
     &.invalid
         border-bottom: 1px solid tomato
 #user-name-error, #user-phone-error, #user-email-error, #user-question-error
     position: absolute
-    bottom: -14px
+    bottom: -19px
+#controlPolicyCheckbox-error
+    position: absolute
+    right: 34%
+    bottom: -17px
+#footerPolicyCheckbox-error
+    position: absolute
+    left: 26%
+    bottom: -19px
+#modalPolicyCheckbox-error
+    position: absolute
+    left: 0
+    bottom: -21px
+   
+
 
 
 

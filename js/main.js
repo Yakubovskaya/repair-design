@@ -62,7 +62,8 @@ $(document).ready(function () {
             userEmail: {
                 required: true,
                 email: true
-            }
+            },
+            modalPolicyCheckbox: "required"
         }, //сообщения
         messages: {
             userName: {
@@ -74,7 +75,8 @@ $(document).ready(function () {
             userEmail: {
                 required: "Обязательно укажите email",
                 email: "Введите в формате: name@domain.com"
-            }
+            },
+            modalPolicyCheckbox: "Требуется согласие на обработку данных"
         }
     });
     
@@ -89,6 +91,7 @@ $(document).ready(function () {
                 maxlength: 15
             },
             userPhone: "required",
+            controlPolicyCheckbox: "required"
             // правило-объект
         }, //сообщения
         messages: {
@@ -98,6 +101,7 @@ $(document).ready(function () {
                 maxlength: "Имя не больше 15 букв"
             },
             userPhone: "Телефон обязателен",
+            controlPolicyCheckbox: "Требуется согласие на обработку данных"
         }
     });
 
@@ -112,7 +116,8 @@ $(document).ready(function () {
                 maxlength: 15
             },
             userPhone: "required",
-            userQuestion: "required"
+            userQuestion: "required",
+            footerPolicyCheckbox: "required"
             // правило-объект
         }, //сообщения
         messages: {
@@ -122,14 +127,16 @@ $(document).ready(function () {
                 maxlength: "Имя не больше 15 букв"
             },
             userPhone: "Телефон обязателен",
-            userQuestion: "Заполните поле"
+            userQuestion: "Заполните поле",
+            footerPolicyCheckbox: "Требуется согласие на обработку данных"
         }
     });
-
+    
     //маска для номера телефона
 
     $('[type=tel]').mask('+7(000)000-00-00', { placeholder: "+7(___)___-__-__" });
 
+ 
 });
 
 
