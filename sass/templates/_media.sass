@@ -63,6 +63,9 @@
             max-width: 42.2rem
             min-height: 22.4rem
             background-size: contain
+    .footer
+        &__map
+            height: 24.2rem
 
 @media screen and ( max-width: 665px )
     .container
@@ -174,15 +177,17 @@
             order: 1
             margin-bottom: 58px
     .footer
+        padding-bottom: 1px
         padding-top: 0
         margin-bottom: 0
         background: none
         background-color: $dark
         &__wrap
+            padding-right: 0
+            padding-left: 0
             background-color: $dark
-            margin-top: -27.3rem
             margin-bottom: 0
-            padding-top: 9rem
+            padding-top: 2rem
         &__form
             display: flex
             flex-direction: column
@@ -190,10 +195,15 @@
             margin: 0
         &__menu
             display: none
-    .footer
-        &__wrap
-            padding-right: 0
-            padding-left: 0
+        &__address
+            display: flex
+            flex-direction: column
+        &__link
+            order: 2
+            margin-top: -0.3rem
+        &__map
+            width: 100%
+            height: 18.2rem
     .policy
         &__label
             &--center
@@ -215,6 +225,12 @@
     .control
         &__section-title
             margin-top: -78.9rem
+@media screen and ( max-width: 462px )
+    .footer
+        &__title
+            &--primary
+                font-size: 1.23rem
+
 @media screen and ( max-width: 427px )
     .projects
         padding-bottom: 81.3rem
@@ -241,6 +257,10 @@
             max-width: 22.3rem
             min-height: 11.8rem
             background-size: contain
+    .footer
+        &__title
+            &--primary
+                font-size: 1rem
         
 @media screen and ( max-width: 380px )
     .projects
@@ -252,7 +272,7 @@
         position: absolute
         right: 23px
         bottom: -16px
-    
+
     
 @media screen and ( max-width: 371px )
     .projects
@@ -268,6 +288,12 @@
         &__section-title
             margin-top: -83rem
 
+@media screen and ( max-width: 323px )
+    .footer
+        &__title
+            &--primary
+                font-size: 0.8rem
+                
 @media screen and ( max-width: 320px )
     .projects
         padding-bottom: 81.9rem
@@ -286,6 +312,8 @@
         position: absolute
         right: 23px
         bottom: -16px
+    
+    
         
         
     

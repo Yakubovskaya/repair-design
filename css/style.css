@@ -852,7 +852,6 @@ header {
     max-width: 63.07rem;
     margin: auto;
     margin-top: -22.3rem;
-    margin-bottom: 3.714rem;
     padding: 2.5rem;
     background-color: #181818; }
   .footer__title {
@@ -863,6 +862,11 @@ header {
     font-weight: 400;
     font-size: 1.428rem;
     text-align: center; }
+    .footer__title--primary {
+      margin-bottom: 0;
+      max-width: 42rem;
+      line-height: 2rem;
+      color: #E3B873; }
   .footer__form {
     display: flex;
     flex-wrap: wrap;
@@ -888,6 +892,38 @@ header {
   .footer__menu {
     background-color: #131313;
     padding: 4.286rem 0; }
+  .footer__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.7rem;
+    margin-bottom: 3rem; }
+  .footer__social-icons {
+    margin-top: 1.7rem; }
+  .footer__map {
+    max-width: 66rem;
+    height: 33.2rem;
+    display: flex;
+    margin: auto;
+    margin-bottom: 4rem; }
+
+.social-icons {
+  display: flex; }
+  .social-icons__message {
+    margin-right: 1rem;
+    width: 28px;
+    height: 28px;
+    background: url("../img/message.svg") no-repeat center;
+    border: 2px solid #E3B873;
+    border-radius: 50%;
+    background-color: #E3B873; }
+  .social-icons__instagram {
+    width: 28px;
+    height: 28px;
+    background: url("../img/instagram.svg") no-repeat center;
+    border: 2px solid #E3B873;
+    border-radius: 50%;
+    background-color: #E3B873; }
 
 .modal {
   opasity: 0;
@@ -989,7 +1025,9 @@ header {
   .control__video {
     max-width: 42.2rem;
     min-height: 22.4rem;
-    background-size: contain; } }
+    background-size: contain; }
+  .footer__map {
+    height: 24.2rem; } }
 
 @media screen and (max-width: 665px) {
   .container__projects {
@@ -1093,15 +1131,17 @@ header {
     order: 1;
     margin-bottom: 58px; }
   .footer {
+    padding-bottom: 1px;
     padding-top: 0;
     margin-bottom: 0;
     background: none;
     background-color: #131313; }
     .footer__wrap {
+      padding-right: 0;
+      padding-left: 0;
       background-color: #131313;
-      margin-top: -27.3rem;
       margin-bottom: 0;
-      padding-top: 9rem; }
+      padding-top: 2rem; }
     .footer__form {
       display: flex;
       flex-direction: column; }
@@ -1109,9 +1149,15 @@ header {
       margin: 0; }
     .footer__menu {
       display: none; }
-  .footer__wrap {
-    padding-right: 0;
-    padding-left: 0; }
+    .footer__address {
+      display: flex;
+      flex-direction: column; }
+    .footer__link {
+      order: 2;
+      margin-top: -0.3rem; }
+    .footer__map {
+      width: 100%;
+      height: 18.2rem; }
   .policy__label--center {
     justify-content: flex-start; }
   #controlPolicyCheckbox-error {
@@ -1129,6 +1175,10 @@ header {
     padding-bottom: 78.9rem; }
   .control__section-title {
     margin-top: -78.9rem; } }
+
+@media screen and (max-width: 462px) {
+  .footer__title--primary {
+    font-size: 1.23rem; } }
 
 @media screen and (max-width: 427px) {
   .projects {
@@ -1150,7 +1200,9 @@ header {
   .control__video {
     max-width: 22.3rem;
     min-height: 11.8rem;
-    background-size: contain; } }
+    background-size: contain; }
+  .footer__title--primary {
+    font-size: 1rem; } }
 
 @media screen and (max-width: 380px) {
   .projects {
@@ -1173,6 +1225,10 @@ header {
     padding-bottom: 83rem; }
   .control__section-title {
     margin-top: -83rem; } }
+
+@media screen and (max-width: 323px) {
+  .footer__title--primary {
+    font-size: 0.8rem; } }
 
 @media screen and (max-width: 320px) {
   .projects {

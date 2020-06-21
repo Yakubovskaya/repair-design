@@ -8,7 +8,6 @@
         max-width: 63.07rem
         margin: auto
         margin-top: -22.3rem
-        margin-bottom: 3.714rem
         padding: 2.5rem
         background-color: $black
     &__title
@@ -19,6 +18,11 @@
         font-weight: 400
         font-size: 1.428rem
         text-align: center
+        &--primary
+            margin-bottom: 0
+            max-width: 42rem
+            line-height: 2rem
+            color: $primary
     &__form
         display: flex
         flex-wrap: wrap
@@ -44,3 +48,39 @@
     &__menu
         background-color: $dark
         padding: 4.286rem 0
+    &__link
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 3.7rem
+        margin-bottom: 3rem
+    &__social-icons
+        margin-top: 1.7rem
+    &__map
+        max-width: 66rem
+        height: 33.2rem
+        display: flex
+        margin: auto
+        margin-bottom: 4rem
+.social-icons
+    display: flex
+    &__message
+        margin-right: 1rem
+        width: 28px
+        height: 28px
+        background: url('../img/message.svg') no-repeat center
+        border: 2px solid $primary
+        border-radius: 50%
+        background-color: $primary  
+    &__instagram 
+        width: 28px
+        height: 28px
+        background: url('../img/instagram.svg') no-repeat center
+        border: 2px solid $primary
+        border-radius: 50%
+        background-color: $primary
+        
+        
+        
+
+
